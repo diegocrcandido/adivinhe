@@ -7,6 +7,11 @@ const screen2 = document.querySelector(".screen2")
 
 btnTry.addEventListener('click', handleClick)
 btnReset.addEventListener('click', endClick)
+document.addEventListener('keydown', function(e){
+  if(e.key == 'Enter'){
+    handleClick()
+  }
+})
 
 function handleClick(event){
   event.preventDefault()
